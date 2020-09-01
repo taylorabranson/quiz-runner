@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public class Checkbox {
+public class Checkbox extends QuestionSet{
+
+    public Checkbox(String question, String questionType, String[] choices, int[] answerKey) {
+        super(question, questionType, choices, answerKey);
+    }
 }
