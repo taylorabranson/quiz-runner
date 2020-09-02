@@ -18,7 +18,7 @@ public abstract class TrueOrFalse extends Question {
             choiceId = i + 1;
             System.out.println(choiceId + ") " + choices[i]);
         }
-        System.out.println("Choose true/false by entering \"1\" or \"2\"");
+        System.out.println("Choose true/false by entering \"1\" or \"2\":");
         int userChoice = input.nextInt();
         return getAnswerKey()[userChoice -1];
     }
