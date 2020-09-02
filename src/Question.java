@@ -3,10 +3,10 @@ public abstract class Question {
     private String question;
     private String questionType;
     private String[] choices;
-    private int[] answerKey;
+    private boolean[] answerKey;
 
 
-    public Question(String question, String questionType, String[] choices, int[] answerKey) {
+    public Question(String question, String questionType, String[] choices, boolean[] answerKey) {
         this.question = question;
         this.questionType = questionType;
         this.choices = choices;
@@ -23,13 +23,10 @@ public abstract class Question {
     public String[] getChoices() {
         return this.choices;
     }
-    public int[] getAnswerKey() {
+    public boolean[] getAnswerKey() {
         return answerKey;
     }
 
     // abstract methods
-    public abstract void printQuestionPrompt();
-    public abstract int[] getUserChoice();
-    public abstract boolean checkAnswer();
-
+    public abstract boolean askQuestion();
 }
