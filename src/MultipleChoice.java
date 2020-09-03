@@ -20,6 +20,7 @@ public class MultipleChoice extends QuestionSet {
         }
         System.out.println("Choose answer by entering corresponding number:");
         int userChoice = input.nextInt();
+        input.close();
         return getAnswerKey()[userChoice -1];
     }
 }

@@ -20,6 +20,7 @@ public class TrueOrFalse extends Question {
         }
         System.out.println("Choose true/false by entering \"1\" or \"2\":");
         int userChoice = input.nextInt();
+        input.close();
         return getAnswerKey()[userChoice - 1];
     }
 }
