@@ -4,7 +4,4 @@ public abstract class QuestionSet extends Question {
         super(question, questionType, choices, answerKey);
     }
 
-    // abstract methods
-    public abstract boolean checkAnswer();
-
 }
