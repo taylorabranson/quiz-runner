@@ -1,26 +1,8 @@
 import java.util.Scanner;
 
-public class TrueOrFalse extends Question {
+public class TrueOrFalse extends QuestionSet {
 
     public TrueOrFalse(String question, String questionType, String[] choices, boolean[] answerKey) {
         super(question, questionType, choices, answerKey);
-    }
-
-    @Override
-    public boolean askQuestion() {
-        String[] choices = getChoices();
-        int choiceId;
-
-        Scanner input = new Scanner(System.in);
-
-        System.out.println(getQuestionType() + ": " + getQuestion());
-        for (int i = 0; i < choices.length; i++) {
-            choiceId = i + 1;
-            System.out.println(choiceId + ") " + choices[i]);
-        }
-        System.out.println("Choose true/false by entering \"1\" or \"2\":");
-        int userChoice = input.nextInt();
-        input.close();
-        return getAnswerKey()[userChoice - 1];
     }
 }
