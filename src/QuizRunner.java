@@ -14,6 +14,7 @@ public class QuizRunner {
 
         if (bestColor.askQuestion()) {
             correctAnswers += 1;
+            System.out.println("Correct!");
         }
 
 
@@ -24,6 +25,7 @@ public class QuizRunner {
 
         if (isSpaceCold.askQuestion() == true) {
             correctAnswers += 1;
+            System.out.println("Correct!");
         }
 
 
@@ -36,6 +38,7 @@ public class QuizRunner {
 
         if (goodPizza.askQuestion()) {
             correctAnswers += 1;
+            System.out.println("Correct!");
         }
 
         System.out.println("Correct Answers: " + correctAnswers);
